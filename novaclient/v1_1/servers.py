@@ -658,7 +658,7 @@ class ServerManager(base.BootingManagerWithFind):
         :param console_type: Type of vnc console to get ('novnc' or 'xvpvnc')
         """
 
-        return self._action('os-getVNCConsole', server,
+        return self._action('os-getVNCConsole-new', server,
                             {'type': console_type})[1]
 
     def get_spice_console(self, server, console_type):
